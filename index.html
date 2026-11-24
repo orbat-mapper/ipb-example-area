@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IPB area preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.18.0/dist/maplibre-gl.css">
+<script src="https://unpkg.com/pmtiles@4.5.0/dist/pmtiles.js"></script>
+<script src="https://unpkg.com/@protomaps/basemaps@5.7.2/dist/basemaps.js"></script>
+<style>html,body,#map{margin:0;height:100%;background:#ddd}
+#ui{position:absolute;top:8px;left:8px;background:#fffd;padding:6px 8px;font:13px sans-serif;border-radius:4px}</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="ui">
+  <label><input type="checkbox" id="t3d"> 3D terrain</label>
+  <label><input type="checkbox" id="hs" checked> Hillshade</label>
+  <label><input type="checkbox" id="mcoo"> MCOO overlay</label>
+  <button id="fit" title="Zoom to the whole island">Fit</button>
+  <select id="theme"><option value="atp">ATP 2-01.3</option><option>light</option><option>dark</option><option>white</option><option>grayscale</option><option>black</option></select>
+</div>
+<script type="module">
+import * as maplibregl from "https://unpkg.com/maplibre-gl@6.18.0/dist/maplibre-gl.mjs";
+const protocol = new pmtiles.Protocol();
+maplibregl.addProtocol("pmtiles", protocol.tile);
+const params = new URLSearchParams(location.search);
+function style(theme) {
+  if (theme === "atp") return "style/atp.json";
+  return {
+    version: 8,
+    glyphs: "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+    sprite: `https://protomaps.github.io/basemaps-assets/sprites/v4/${theme}`,
+    sources: {
+      protomaps: { type: "vector", url: "pmtiles://https://orbat-mapper.github.io/ipb-example-area/out/ipb-vector.pmtiles", attribution: "Traced from ATP 2-01.3 (fictional)" },
+      dem: { type: "raster-dem", url: "pmtiles://https://orbat-mapper.github.io/ipb-example-area/out/ipb-terrain.pmtiles", encoding: "terrarium", tileSize: 512 },
+    },
+    layers: (() => {
+      const base = basemaps.layers("protomaps", basemaps.namedFlavor(theme), { lang: "en" });
+      // hillshade sits above land and water fills, below roads and buildings
+      const at = base.findIndex(l => l["source-layer"] === "roads" || l["source-layer"] === "buildings");
+      base.splice(at, 0, { id: "hillshade", type: "hillshade", source: "dem", paint: { "hillshade-exaggeration": 0.5 } });
+      return base;
+    })(),
+  };
+}
+const map = new maplibregl.Map({
+  container: "map",
+  style: style(params.get("theme") || "atp"),
+  center: [-40.0, 38.0], zoom: +(params.get("z") || 11.4),
+  pitch: +(params.get("pitch") || 0), bearing: +(params.get("bearing") || 0),
+  hash: true, maxPitch: 80,
+});
+map.addControl(new maplibregl.NavigationControl());
+// 3D terrain gets its own copy of the "dem" source: MapLibre renders worse (and warns) when
+// hillshade and terrain share one raster-dem source
+function setTerrain(on) {
+  if (on && !map.getSource("terrain")) map.addSource("terrain", { ...map.getStyle().sources.dem });
+  map.setTerrain(on ? { source: "terrain", exaggeration: 1.5 } : null);
+}
+document.getElementById("t3d").onchange = e => setTerrain(e.target.checked);
+// archive bounds (pmtiles show out/ipb-vector.pmtiles), as in tactrace-config.json
+const ISLAND = [[-40.5203, 37.6821], [-39.7319, 38.1636]];
+document.getElementById("fit").onclick = () => map.fitBounds(ISLAND, { padding: 20 });
+document.getElementById("theme").onchange = e => { map.setStyle(style(e.target.value)); };
+// MCOO overlay (ATP style only): toggle every layer whose id starts with "mcoo-"
+function setMcoo(on) {
+  for (const l of map.getStyle().layers) if (l.id.startsWith("mcoo-")) map.setLayoutProperty(l.id, "visibility", on ? "visible" : "none");
+}
+document.getElementById("mcoo").onchange = e => setMcoo(e.target.checked);
+// hillshade: every theme here names its hillshade layer "hillshade"
+function setHillshade(on) { if (map.getLayer("hillshade")) map.setLayoutProperty("hillshade", "visibility", on ? "visible" : "none"); }
+document.getElementById("hs").onchange = e => setHillshade(e.target.checked);
+map.on("style.load", () => { setTerrain(document.getElementById("t3d").checked); setMcoo(document.getElementById("mcoo").checked); setHillshade(document.getElementById("hs").checked); });
+map.on("load", () => { if (params.get("hillshade") === "0") { document.getElementById("hs").checked = false; setHillshade(false); }
+  if (params.get("mcoo")) { document.getElementById("mcoo").checked = true; setMcoo(true); }
+  if (params.get("terrain")) { document.getElementById("t3d").checked = true; setTerrain(true); } window.mapReady = true; window.map = map; });
+map.on("error", e => console.error(e.error && e.error.message));
+</script>
+</body>
+</html>

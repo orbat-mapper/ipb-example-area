@@ -1,0 +1,23 @@
+{
+ "atp-severe": {
+  "x": 0,
+  "y": 0,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 2
+ },
+ "atp-restricted": {
+  "x": 24,
+  "y": 0,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 2
+ },
+ "atp-urban": {
+  "x": 48,
+  "y": 0,
+  "width": 32,
+  "height": 32,
+  "pixelRatio": 2
+ }
+}

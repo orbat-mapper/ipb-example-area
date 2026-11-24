@@ -1,0 +1,886 @@
+{
+  "type": "tactrace",
+  "version": 5,
+  "meta": {
+    "id": "AMjzeuQmCK",
+    "name": "ATP 2-01.3 IPB examples",
+    "createdAt": "2026-11-21T20:56:46.260Z",
+    "modifiedAt": "2026-11-21T20:56:46.260Z"
+  },
+  "pages": [
+    {
+      "id": "OdfQdNjDGg",
+      "name": "Figure 4-13 Avenue-in-depth",
+      "activeLayerId": "eaf26bdf-1995-4530-bd66-5ab5e7ba3740",
+      "appState": {
+        "view": {
+          "center": [
+            -39.993616,
+            37.997736
+          ],
+          "zoom": 11.6,
+          "bearing": 0,
+          "pitch": 0,
+          "projection": "mercator"
+        },
+        "grid": {
+          "visible": false,
+          "mode": "mgrs",
+          "mgrs": {
+            "interval": 1000
+          },
+          "utm": {
+            "crs": {
+              "kind": "utm",
+              "zone": 24,
+              "hemisphere": "north"
+            },
+            "interval": 1000
+          }
+        },
+        "measurementUnits": "metric"
+      },
+      "layers": [
+        {
+          "id": "485a0189-2669-4ec8-b3c4-4ace5d9b3f3d",
+          "name": "Avenues of approach",
+          "visible": true,
+          "locked": false,
+          "opacity": 1,
+          "type": "overlay",
+          "items": [
+            {
+              "id": "29a233ed-b55e-4980-bb50-ca181665a038",
+              "name": "Avenue of approach AA1",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -40.047879,
+                  38.011318
+                ],
+                [
+                  -40.043173,
+                  38.0151
+                ],
+                [
+                  -40.031919,
+                  38.024143
+                ],
+                [
+                  -40.01596,
+                  38.031686
+                ],
+                [
+                  -39.998404,
+                  38.038474
+                ],
+                [
+                  -40.046865,
+                  38.017952
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "5f193905-9d72-4b1e-bdf4-652f448afe69",
+              "name": "AA1 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -40.018513,
+                  38.033446
+                ]
+              ],
+              "options": {
+                "text": "AA1",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            },
+            {
+              "id": "6aee1139-e628-4a06-8ba1-0e3eeae0d2b6",
+              "name": "Avenue of approach AA2",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -40.001596,
+                  37.967042
+                ],
+                [
+                  -40.000075,
+                  37.971598
+                ],
+                [
+                  -39.996808,
+                  37.981385
+                ],
+                [
+                  -39.994574,
+                  37.996479
+                ],
+                [
+                  -39.99585,
+                  38.011569
+                ],
+                [
+                  -39.993616,
+                  38.0254
+                ],
+                [
+                  -39.988828,
+                  38.03596
+                ],
+                [
+                  -40.00452,
+                  37.97252
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "4ebe0542-9762-4627-b3f5-5268afc85d6e",
+              "name": "AA2 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -39.991063,
+                  38.014084
+                ]
+              ],
+              "options": {
+                "text": "AA2",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            },
+            {
+              "id": "3aa56d2f-f58f-49f3-a4bb-5148f6510add",
+              "name": "Avenue of approach AA3",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -39.983083,
+                  37.962009
+                ],
+                [
+                  -39.981404,
+                  37.966531
+                ],
+                [
+                  -39.975422,
+                  37.982642
+                ],
+                [
+                  -39.97223,
+                  38.000252
+                ],
+                [
+                  -39.967442,
+                  38.016599
+                ],
+                [
+                  -39.960101,
+                  38.030429
+                ],
+                [
+                  -39.985816,
+                  37.967548
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "6a2a1c45-3050-441e-b326-56a452530396",
+              "name": "AA3 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -39.966165,
+                  38.004024
+                ]
+              ],
+              "options": {
+                "text": "AA3",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            },
+            {
+              "id": "a5417024-dc0c-4469-bce0-4c65638dcbf8",
+              "name": "Avenue of approach AA4",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -39.98021,
+                  37.949425
+                ],
+                [
+                  -39.974752,
+                  37.951344
+                ],
+                [
+                  -39.953717,
+                  37.958738
+                ],
+                [
+                  -39.945099,
+                  37.97132
+                ],
+                [
+                  -39.939353,
+                  37.984655
+                ],
+                [
+                  -39.976624,
+                  37.954654
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "abff4f77-c8f6-4eca-9382-32c95bbed09f",
+              "name": "AA4 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -39.945099,
+                  37.966287
+                ]
+              ],
+              "options": {
+                "text": "AA4",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            },
+            {
+              "id": "5552cf34-d105-4edd-8ca7-4ab27d5995ac",
+              "name": "Avenue of approach AA5",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -40.085225,
+                  38.002264
+                ],
+                [
+                  -40.088986,
+                  37.995853
+                ],
+                [
+                  -40.09895,
+                  37.978869
+                ],
+                [
+                  -40.118102,
+                  37.964526
+                ],
+                [
+                  -40.137892,
+                  37.956724
+                ],
+                [
+                  -40.082728,
+                  37.993573
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "d1984996-ffd6-46d7-9fde-80e837df0272",
+              "name": "AA5 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -40.095758,
+                  37.985158
+                ]
+              ],
+              "options": {
+                "text": "AA5",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            },
+            {
+              "id": "264cad61-c24c-4e07-b4bf-2641b7fbd8e5",
+              "name": "Avenue of approach AA6",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000015140400000000000000",
+              "controlPoints": [
+                [
+                  -40.010853,
+                  37.957983
+                ],
+                [
+                  -40.018823,
+                  37.956412
+                ],
+                [
+                  -40.028727,
+                  37.954459
+                ],
+                [
+                  -40.060647,
+                  37.949929
+                ],
+                [
+                  -40.09895,
+                  37.947915
+                ],
+                [
+                  -40.017291,
+                  37.951577
+                ]
+              ],
+              "options": {
+                "shaftWidthRatio": 0.6,
+                "smooth": true,
+                "smoothResolution": 12
+              },
+              "strokeWidth": 2.5,
+              "fillColor": "#ffffffd9",
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "9dfe6038-93e8-44da-9e98-ae71a613a614",
+              "name": "AA6 label",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099020100000000000000",
+              "controlPoints": [
+                [
+                  -40.033515,
+                  37.953201
+                ]
+              ],
+              "options": {
+                "text": "AA6",
+                "textAlign": "center",
+                "sizeMeters": 420
+              },
+              "strokeColor": "#000000ff",
+              "strokeWidth": 3
+            }
+          ]
+        },
+        {
+          "id": "eaf26bdf-1995-4530-bd66-5ab5e7ba3740",
+          "name": "Avenue-in-depth",
+          "visible": true,
+          "locked": false,
+          "opacity": 1,
+          "type": "overlay",
+          "items": [
+            {
+              "id": "7b2f7d75-b79c-42cb-9f45-7326e4445bd8",
+              "name": "Avenue-in-depth evaluation area",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000099010200000000000000",
+              "controlPoints": [
+                [
+                  -39.978614,
+                  38.042496
+                ],
+                [
+                  -39.985636,
+                  38.027914
+                ],
+                [
+                  -40.0,
+                  38.004024
+                ],
+                [
+                  -40.009576,
+                  37.987674
+                ],
+                [
+                  -40.019152,
+                  37.972578
+                ],
+                [
+                  -40.006384,
+                  37.966287
+                ],
+                [
+                  -39.98404,
+                  37.956976
+                ],
+                [
+                  -39.98404,
+                  38.010312
+                ],
+                [
+                  -39.977018,
+                  38.024143
+                ],
+                [
+                  -39.968081,
+                  38.035457
+                ]
+              ],
+              "options": {
+                "smooth": false,
+                "filled": false
+              },
+              "strokeColor": "#000000",
+              "strokeWidth": 4,
+              "strokeDash": [
+                2,
+                1.5
+              ]
+            },
+            {
+              "id": "9e47410b-1c19-4359-85c7-57b0c4f693ab",
+              "name": "LD PL Puma",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000014100000000000000000",
+              "controlPoints": [
+                [
+                  -40.003192,
+                  38.036463
+                ],
+                [
+                  -39.96425,
+                  38.021628
+                ],
+                [
+                  -39.925947,
+                  38.006791
+                ]
+              ],
+              "options": {
+                "includePrefix": true,
+                "phaseLineName": "PUMA",
+                "labelSize": 420,
+                "smooth": false
+              },
+              "strokeWidth": 3,
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "412e2706-a1c1-4068-892d-76a38e5f674d",
+              "name": "PL Lynx",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000014030000000000000000",
+              "controlPoints": [
+                [
+                  -40.019152,
+                  38.005533
+                ],
+                [
+                  -39.985636,
+                  38.00327
+                ],
+                [
+                  -39.952121,
+                  38.001006
+                ]
+              ],
+              "textAmplifiers": {
+                "T": "LYNX"
+              },
+              "options": {
+                "includePrefix": true,
+                "labelSize": 420,
+                "smooth": false
+              },
+              "strokeWidth": 3,
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "34dfc13d-a809-413b-beef-79db3f5595a9",
+              "name": "PL Jaguar",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000014030000000000000000",
+              "controlPoints": [
+                [
+                  -40.028727,
+                  37.994969
+                ],
+                [
+                  -39.994893,
+                  37.985913
+                ],
+                [
+                  -39.961058,
+                  37.977107
+                ]
+              ],
+              "textAmplifiers": {
+                "T": "JAGUAR"
+              },
+              "options": {
+                "includePrefix": true,
+                "labelSize": 420,
+                "smooth": false
+              },
+              "strokeWidth": 3,
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "60fa85f4-4efb-4c8e-9f7a-4ca180e51a53",
+              "name": "LOA PL Tiger",
+              "visible": true,
+              "locked": false,
+              "type": "controlMeasureOrPlanningSymbol",
+              "sidc": "100325000014090000000000000000",
+              "controlPoints": [
+                [
+                  -40.020748,
+                  37.982642
+                ],
+                [
+                  -39.995531,
+                  37.968804
+                ],
+                [
+                  -39.970634,
+                  37.955214
+                ]
+              ],
+              "options": {
+                "includePrefix": true,
+                "phaseLineName": "TIGER",
+                "labelSize": 420,
+                "smooth": false
+              },
+              "strokeWidth": 3,
+              "strokeColor": "#000000"
+            },
+            {
+              "id": "64259739-437f-4c6d-9e95-381fb848822b",
+              "name": "Infantry battalion",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100310001612110000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -39.969677,
+                  38.040233
+                ]
+              },
+              "size": 1600,
+              "groundAnchorPx": 36
+            },
+            {
+              "id": "ea578942-a5fc-4704-bff7-c4128a6da127",
+              "type": "note",
+              "visible": true,
+              "locked": false,
+              "center": [
+                -39.899454,
+                37.982642
+              ],
+              "rotation": 0,
+              "emSize": {
+                "value": 340,
+                "unit": "meters"
+              },
+              "width": 24,
+              "frame": {
+                "preset": "title",
+                "tokens": {
+                  "bodyAlign": "center"
+                }
+              },
+              "content": "# AVENUE-IN-DEPTH TECHNIQUE\n\nEvaluating the battlefield along one avenue of approach,\\\nfrom LD PL Puma to LOA PL Tiger.\\\n\\\n*After ATP 2-01.3, Figure 4-13.*",
+              "opacity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bGZv8fbQ7E",
+      "name": "Figure 4-7 Key terrain",
+      "activeLayerId": "8ad215b8-67f4-4050-bfd0-c065cac9860a",
+      "appState": {
+        "view": {
+          "center": [
+            -40.0,
+            38.002767
+          ],
+          "zoom": 11.4,
+          "bearing": 0,
+          "pitch": 0,
+          "projection": "mercator"
+        },
+        "grid": {
+          "visible": false,
+          "mode": "mgrs",
+          "mgrs": {
+            "interval": 1000
+          },
+          "utm": {
+            "crs": {
+              "kind": "utm",
+              "zone": 24,
+              "hemisphere": "north"
+            },
+            "interval": 1000
+          }
+        },
+        "measurementUnits": "metric"
+      },
+      "layers": [
+        {
+          "id": "8ad215b8-67f4-4050-bfd0-c065cac9860a",
+          "name": "Key terrain",
+          "visible": true,
+          "locked": false,
+          "opacity": 1,
+          "type": "overlay",
+          "items": [
+            {
+              "id": "99ed91dc-a582-4bd7-a2db-99b18341a6aa",
+              "name": "K1: Airfield: Supports government infrastructure",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -40.031281,
+                  38.0083
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "1"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "d0a48b01-cb93-46e8-856a-edd4ab5199d0",
+              "name": "K2: Airfield: Movement of military forces",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -39.989147,
+                  37.953453
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "2"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "5a321150-065f-494a-bff8-b5956661ab87",
+              "name": "K3: Harbor: Naval support and resupply",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -39.972549,
+                  38.054561
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "3"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "7293d435-f54a-4e19-84eb-ccb5c9c68ad5",
+              "name": "K4: Ferry: Access control",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -40.077883,
+                  38.054561
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "4"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "d5239f92-4551-40da-bd77-d705f44a79a7",
+              "name": "K5: Military Complex: Permits establishment of area defense",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -40.016598,
+                  37.968552
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "5"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "c9d58893-748c-4aff-ac33-ea7b51ad2a6a",
+              "name": "K6: Hilltop: Direct line of sight to harbor and city",
+              "visible": true,
+              "locked": false,
+              "type": "iconBasedSymbol",
+              "sidc": "100325000013210000000000000000",
+              "sizeMode": "ground",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -40.060008,
+                  38.03596
+                ]
+              },
+              "size": 1500,
+              "groundAnchorPx": 36,
+              "textAmplifiers": {
+                "T": "6"
+              },
+              "fillColor": "#7b4fa8"
+            },
+            {
+              "id": "a8a3180f-2b4f-46c0-a6b5-cbdb67c8fbac",
+              "type": "note",
+              "visible": true,
+              "locked": false,
+              "center": [
+                -39.899454,
+                37.99019
+              ],
+              "rotation": 0,
+              "emSize": {
+                "value": 380,
+                "unit": "meters"
+              },
+              "width": 28,
+              "frame": {
+                "preset": "title",
+                "tokens": {
+                  "bodyAlign": "center"
+                }
+              },
+              "content": "# KEY TERRAIN\n\n**K1** Airfield: Supports government infrastructure\\\n**K2** Airfield: Movement of military forces\\\n**K3** Harbor: Naval support and resupply\\\n**K4** Ferry: Access control\\\n**K5** Military Complex: Permits establishment of area defense\\\n**K6** Hilltop: Direct line of sight to harbor and city\\\n\\\n*After ATP 2-01.3, Figure 4-7.*",
+              "opacity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activePageId": "OdfQdNjDGg",
+  "files": {}
+}

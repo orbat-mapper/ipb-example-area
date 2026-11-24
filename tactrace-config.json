@@ -1,0 +1,82 @@
+{
+  "basemaps": [
+    {
+      "name": "ipb-atp",
+      "title": "IPB area (ATP 2-01.3)",
+      "provider": "ipb",
+      "category": "Light",
+      "description": "Fictional island from the ATP 2-01.3 example map, drawn like the publication's figures.",
+      "attribution": "Traced from ATP 2-01.3 (fictional)",
+      "tags": [
+        "ipb",
+        "atp",
+        "fictional",
+        "offline"
+      ],
+      "sourceType": "style",
+      "styleUrl": "https://orbat-mapper.github.io/ipb-example-area/style/atp.json",
+      "bounds": [
+        -40.5203,
+        37.6821,
+        -39.7319,
+        38.1636
+      ]
+    },
+    {
+      "name": "ipb-atp-mcoo",
+      "title": "IPB area with MCOO",
+      "provider": "ipb",
+      "category": "Light",
+      "description": "As above, with the MCOO overlay (Figure 4-7): severely restricted, restricted and urban terrain.",
+      "attribution": "Traced from ATP 2-01.3 (fictional)",
+      "tags": [
+        "ipb",
+        "atp",
+        "mcoo",
+        "fictional",
+        "offline"
+      ],
+      "sourceType": "style",
+      "styleUrl": "https://orbat-mapper.github.io/ipb-example-area/style/atp-mcoo.json",
+      "bounds": [
+        -40.5203,
+        37.6821,
+        -39.7319,
+        38.1636
+      ]
+    },
+    {
+      "name": "ipb-protomaps",
+      "title": "IPB area (Protomaps)",
+      "provider": "ipb",
+      "category": "Vector",
+      "description": "The same vector archive in the Protomaps themes.",
+      "sourceType": "pmtiles",
+      "url": "https://orbat-mapper.github.io/ipb-example-area/out/ipb-vector.pmtiles",
+      "flavor": "light",
+      "bounds": [
+        -40.5203,
+        37.6821,
+        -39.7319,
+        38.1636
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "id": "ipb",
+      "name": "IPB example area"
+    }
+  ],
+  "terrain": {
+    "url": "pmtiles://https://orbat-mapper.github.io/ipb-example-area/out/ipb-terrain.pmtiles",
+    "encoding": "terrarium",
+    "tileSize": 512,
+    "attribution": "Terrain traced from ATP 2-01.3 figures (fictional)"
+  },
+  "features": {
+    "basemapControl": false,
+    "placeSearch": false,
+    "terrain": true
+  }
+}
